@@ -9,7 +9,7 @@ INITPOSX = 0.5
 INITPOSY = -0.5
 RTL_ALTITUDE = 3.0
 
-SIM_MODE = os.environ.get("NECTAREFA_SIM", "0") == "1"
+SIM_MODE = 0
 
 
 def configure_initpos(initposx: float, initposy: float, linesize: float) -> None:
