@@ -18,6 +18,7 @@ from nectarefa.constants import (
 from nectar.control import(
     DroneFactory,
     MavrosConfig,
+    MavlinkConfig,
     MavrosDrone,
     MavlinkDrone,
     PoseSource,
