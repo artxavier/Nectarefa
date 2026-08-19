@@ -19,6 +19,7 @@ from nectar.control import(
     DroneFactory,
     MavrosConfig,
     MavrosDrone,
+    MavlinkDrone,
     PoseSource,
     MoveReference,
     RTLMethod,
