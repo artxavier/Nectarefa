@@ -38,11 +38,9 @@ class Initialize(State):
             yasmin.YASMIN_LOG_INFO("Initializing drone...")
 
             config = (
-                SITL_GAZEBO_CONFIG
-                if SIM_MODE
-                else MavrosConfig(pose_source=PoseSource.GPS)
+                SITL_GAZEBO_CONFIG if SIM_MODE else MavlinkConfig()
             )
-            drone = DroneFactory.create("mavros", config, node._executor)
+            drone = DroneFactory.create("mavlink", config, node._executor)
             blackboard["drone"] = drone
             drone.delay(1)
             
